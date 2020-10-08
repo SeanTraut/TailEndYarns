@@ -1,0 +1,10 @@
+@import './homepage/homepage.styl';
+@import './shared.styl';
+
+body, body * {
+  display: flex;
+}
+
+script{
+  display: none;
+}

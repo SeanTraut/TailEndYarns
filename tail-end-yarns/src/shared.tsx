@@ -5,7 +5,11 @@ interface MainHeaderProps{
 export function MainHeader(props:MainHeaderProps){
   return(
     <div className="MainHeader">
-      Testing Header
+      <logo-img>asdf</logo-img>
+      <nav>
+        asdfasdf
+      </nav>
+      
     </div>
   );
 }
