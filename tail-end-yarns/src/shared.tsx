@@ -5,11 +5,12 @@ interface MainHeaderProps{
 export function MainHeader(props:MainHeaderProps){
   return(
     <div className="MainHeader">
-      <logo-img>asdf</logo-img>
+      <a className="logo-link" href="#home">
+        <img src="http://placekitten.com/200/100" className="logo-img" alt="logo" />
+      </a>
       <nav>
-        asdfasdf
+        Nav
       </nav>
-      
     </div>
   );
 }

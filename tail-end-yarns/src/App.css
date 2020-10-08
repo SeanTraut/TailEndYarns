@@ -1,8 +1,12 @@
-@import './homepage/homepage.styl';
+@import './reset.css';
 @import './shared.styl';
+@import './homepage/homepage.styl';
+
 
 body, body * {
   display: flex;
+  flex: 0;
+  flex-direction: column;
 }
 
 script{
