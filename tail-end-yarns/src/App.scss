@@ -1,12 +1,12 @@
 @import './reset.css';
-@import './shared.styl';
-@import './homepage/homepage.styl';
+@import './shared.scss';
+@import './homepage/homepage.scss';
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 /** CSS Variables **/
 :root{
-  --text:red;
+  --text:black;
 }
 
 /** Global Styling **/
