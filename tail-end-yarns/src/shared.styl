@@ -1,6 +1,8 @@
+/** Main Site Header **/
 div.MainHeader{
   flex: 1 1 100px;
   flex-direction: row;
+  padding: 30px;
   justify-content: space-around;
   align-items: center;
 }
@@ -14,7 +16,26 @@ div.MainHeader a.logo-link{
 div.MainHeader img.logo-img{
 }
 
-div.MainHeader nav{
+div.MainHeader nav.header-nav{
   flex-direction: row;
   background: lightblue;
+}
+
+nav.header-nav ul.nav-list{
+  flex-direction: row;
+}
+
+nav.header-nav li.nav-li{
+  flex-direction: row;
+  padding: 5px 30px;
+  text-align: center;
+}
+
+ul.nav-list a.nav-text{
+  text-decoration: none;
+  justify-content: center;
+}
+
+ul.nav-list a.nav-text:hover{
+  border-bottom: 1px solid black;
 }

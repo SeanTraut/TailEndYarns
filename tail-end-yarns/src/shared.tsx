@@ -8,8 +8,14 @@ export function MainHeader(props:MainHeaderProps){
       <a className="logo-link" href="#home">
         <img src="http://placekitten.com/200/100" className="logo-img" alt="logo" />
       </a>
-      <nav>
-        Nav
+      <spacer />
+      <nav className="header-nav">
+        <ul className="nav-list">
+          <li className="nav-li"><a className="nav-text" href="#home">Home</a></li>
+          <li className="nav-li"><a className="nav-text" href="">Shop</a></li>
+          <li className="nav-li"><a className="nav-text" href="#about">About</a></li>
+          <li className="nav-li"><a className="nav-text" href="#contact">Contact Us</a></li>
+        </ul>
       </nav>
     </div>
   );
