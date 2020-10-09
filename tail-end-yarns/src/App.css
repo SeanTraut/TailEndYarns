@@ -4,6 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+/** CSS Variables **/
+:root{
+  --text:red;
+}
+
+/** Global Styling **/
 body, body * {
   display: flex;
   flex: 0;
@@ -11,6 +17,7 @@ body, body * {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 1.2;
+  color: var(--text);
 }
 
 script{

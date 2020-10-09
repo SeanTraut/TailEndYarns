@@ -3,30 +3,24 @@ div.MainHeader{
   flex: 1 1 100px;
   flex-direction: row;
   padding: 30px;
-  justify-content: space-around;
+  justify-content: stretch;
   align-items: center;
 }
 
 div.MainHeader a.logo-link{
   text-decoration: none;
-  width: 400px;
-  height: 100px;
+  margin-left: 10vw;
 }
 
-div.MainHeader img.logo-img{
-}
-
-div.MainHeader nav.header-nav{
+div.MainHeader ul.nav-list{
+  margin-right: 20vw;
+  display: flex;
   flex-direction: row;
-  background: lightblue;
+  list-style: none;
 }
 
-nav.header-nav ul.nav-list{
-  flex-direction: row;
-}
-
-nav.header-nav li.nav-li{
-  flex-direction: row;
+ul.nav-list li.nav-li{
+  white-space: nowrap;
   padding: 5px 30px;
   text-align: center;
 }
@@ -37,5 +31,5 @@ ul.nav-list a.nav-text{
 }
 
 ul.nav-list a.nav-text:hover{
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--text);
 }
