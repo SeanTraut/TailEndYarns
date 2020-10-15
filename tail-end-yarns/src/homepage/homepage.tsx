@@ -1,21 +1,20 @@
 import React from 'react';
-import {MainHeader} from '../shared';
+import {MainHeader, MainFooter, Gallery}  from '../shared';
+import { db } from "../data";
 
-interface HomePageProps{
-
-}
+interface HomePageProps{}
 export function HomePage(props:HomePageProps){
   return(
     <div className="HomePage">
       <MainHeader />
       <MainCTA />
+      <Gallery />
+      <MainFooter />
     </div>
   );
 }
 
-interface MainCTAProps{
-
-}
+interface MainCTAProps{}
 function MainCTA(props:MainCTAProps){
   return(
     <div className="MainCTA">

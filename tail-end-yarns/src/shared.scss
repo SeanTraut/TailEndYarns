@@ -35,3 +35,37 @@ ul.nav-list a.nav-text{
 ul.nav-list a.nav-text:hover{
   border-bottom: 1px solid var(--text);
 }
+
+/** Size Wrapper **/
+div.SizeWrapper{
+  flex-direction: row;
+  justify-content: center;
+}
+
+div.SizeWrapper content-wrapper{
+  flex: 0 1 1200px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/** Gallery **/
+div.Gallery gallery{
+  align-items: stretch;
+  margin-top: 55px;
+}
+
+div.Gallery gallery-items{
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-items: center;
+  align-items: stretch;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/** Main Footer **/
+div.MainFooter{
+  justify-content: flex-end;
+  background: lightgrey;
+}
