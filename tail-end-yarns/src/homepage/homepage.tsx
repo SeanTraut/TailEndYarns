@@ -19,7 +19,10 @@ interface MainCTAProps{
 function MainCTA(props:MainCTAProps){
   return(
     <div className="MainCTA">
-      Testing CTA
+      <div className = "hero-image">
+        <h1 className="page-title">Tail End Yarns</h1>
+        <button className="CTA">Visit Our Store</button>
+      </div>
     </div>
   );
 }

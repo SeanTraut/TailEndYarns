@@ -27,7 +27,9 @@ ul.nav-list li.nav-li{
 
 ul.nav-list a.nav-text{
   text-decoration: none;
+  border-bottom: 1px solid transparent;
   justify-content: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 ul.nav-list a.nav-text:hover{

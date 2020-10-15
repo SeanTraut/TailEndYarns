@@ -1,0 +1,25 @@
+div.hero-image{
+  flex: 0 0 300px;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://dummyimage.com/1920x600/f00/fff.png&text=+");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1.page-title{
+  font-size: 65px;
+  font-family: Roboto, sans-serif;
+  color:white;
+}
+
+button.CTA{
+  border: none;
+  border-radius: 5px;
+}
+
+button.CTA:hover{
+  color: white;
+  background: black;
+}
