@@ -45,23 +45,38 @@ div.SizeWrapper{
 div.SizeWrapper content-wrapper{
   flex: 0 1 1200px;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: stretch;
+  align-items: stretch;
 }
 
 /** Gallery **/
-div.Gallery gallery{
-  align-items: stretch;
+div.HomePage div.Gallery{
   margin-top: 55px;
 }
 
+div.Gallery gallery{
+  flex: 1;
+  align-items: stretch;
+}
+
+div.Gallery h1.gallery-title{
+  flex-direction: row;
+  justify-content: center;
+  white-space: nowrap;
+  margin-bottom: 55px;
+  font-family: Roboto, serif;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
 div.Gallery gallery-items{
+  flex: 1;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
   justify-items: center;
   align-items: stretch;
-  justify-content: center;
-  overflow: hidden;
+  justify-content: stretch;
 }
 
 /** Main Footer **/

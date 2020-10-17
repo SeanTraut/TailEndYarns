@@ -197,4 +197,4 @@ db.make_product("Forest Floor", "$15.00");
 db.make_product("Cotton Candy", "$15.00");
 db.make_product("Coffee Cake", "$15.00");
 
-db.make_category("", "All in Stock Products", "http://placekitten.com/805/805", db.list_product(["Jazz Cup", "Sunburst", "Forest Floor", "Cotton Candy", "Coffee Cake"]));
+db.make_category("in-stock", "All in Stock Products", "http://placekitten.com/805/805", db.list_product(["Jazz Cup", "Sunburst", "Forest Floor", "Cotton Candy", "Coffee Cake"]));

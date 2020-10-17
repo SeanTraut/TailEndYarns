@@ -1,6 +1,6 @@
 import React from 'react';
 import {MainHeader, MainFooter, Gallery}  from '../shared';
-import { db } from "../data";
+import { db, Product } from "../data";
 
 interface HomePageProps{}
 export function HomePage(props:HomePageProps){
@@ -8,7 +8,7 @@ export function HomePage(props:HomePageProps){
     <div className="HomePage">
       <MainHeader />
       <MainCTA />
-      <Gallery />
+      <Gallery title="Available Yarns">{product_elements}</Gallery>
       <MainFooter />
     </div>
   );
@@ -24,4 +24,28 @@ function MainCTA(props:MainCTAProps){
       </div>
     </div>
   );
+}
+
+interface HomeProductProps{
+  product: Product
+}
+function HomeProduct(props:HomeProductProps){
+  let product = props.product;
+  let source = product.pictures[0] || "http://placekitten.com/900/900";
+
+  return(
+    <div className="HomeProduct">
+      <a href = {`#product/${db.products.indexOf(product)}`} className = "product">
+        <product-image source={source} style={{ backgroundImage: `url(${source})` }} class="image product-home-image" />
+        <product-title>{product.title || "Neon Pink"}</product-title>
+        <product-price>{product.price || "$15.00"}</product-price>
+        <ion-icon name="heart-half" class="favorite-heart"></ion-icon>
+      </a>
+    </div>
+  );
+}
+
+let product_elements:JSX.Element[] = [];
+for(let product of db.products){
+  product_elements.push(<HomeProduct product = {product} />);
 }

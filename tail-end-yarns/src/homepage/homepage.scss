@@ -1,4 +1,5 @@
-div.hero-image{
+/** Main CTA **/
+div.MainCTA div.hero-image{
   flex: 0 0 300px;
   justify-content: center;
   align-items: center;
@@ -8,18 +9,45 @@ div.hero-image{
   background-repeat: no-repeat;
 }
 
-h1.page-title{
+div.MainCTA h1.page-title{
   font-size: 65px;
   font-family: Roboto, sans-serif;
   color:white;
 }
 
-button.CTA{
+div.MainCTA button.CTA{
   border: none;
   border-radius: 5px;
 }
 
-button.CTA:hover{
+div.MainCTA button.CTA:hover{
   color: white;
   background: black;
+}
+
+/** Home Product **/
+div.HomeProduct{
+  flex: 0 0 15%;
+  margin: 0 5% 5%;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+div.HomeProduct a{
+  text-decoration: none;
+}
+
+div.HomeProduct product-image{
+  width: 100%;
+  padding-top: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+div.HomeProduct product-image:hover{
+  filter: brightness(1.3) contrast(.9);
+}
+
+div.HomeProduct product-title{
+  font-size: 17px;
 }
