@@ -1,4 +1,4 @@
-/** Main Site Header **/
+/** Main Header **/
 div.MainHeader{
   flex: 1 1 100px;
   flex-direction: row;
@@ -13,7 +13,7 @@ div.MainHeader a.logo-link{
 }
 
 div.MainHeader ul.nav-list{
-  margin-right: 20vw;
+  margin-right: 10vw;
   display: flex;
   flex-direction: row;
   list-style: none;
@@ -34,6 +34,43 @@ ul.nav-list a.nav-text{
 
 ul.nav-list a.nav-text:hover{
   border-bottom: 1px solid var(--text);
+}
+
+/** Main Footer **/
+div.MainFooter{
+  background: lightgrey;
+  padding-bottom: 30px;
+}
+
+div.MainFooter footer-column{
+  flex: 1;
+}
+
+div.MainFooter h1.column-header{
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+}
+
+div.MainFooter ul.footer-links{
+ flex: 0;
+ align-items: flex-start;
+}
+
+ul.footer-links a{
+  text-decoration: none;
+  font-size: 16px;
+  border-bottom: 1px solid transparent;
+}
+
+ul.footer-links a:hover{
+  border-bottom: 1px solid black;
+}
+
+div.MainFooter footer-column.misc-column{
+  padding: 0 20px;
+  font-size: 16px;
 }
 
 /** Size Wrapper **/
@@ -77,10 +114,4 @@ div.Gallery gallery-items{
   justify-items: center;
   align-items: stretch;
   justify-content: stretch;
-}
-
-/** Main Footer **/
-div.MainFooter{
-  justify-content: flex-end;
-  background: lightgrey;
 }

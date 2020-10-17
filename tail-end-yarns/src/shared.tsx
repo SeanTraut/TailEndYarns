@@ -23,7 +23,25 @@ export function MainFooter(props:MainFooterProps){
   return(
     <div className="MainFooter">
       <SizeWrapper>
-        Footer Using CSS Grid
+        <footer-column class="link-column">
+          <h1 className="column-header quick-links">Quick Links</h1>
+          <ul className="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </footer-column>
+        <footer-column class="misc-column">
+        <h1 className="column-header misc-header">Blurb</h1>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma
+        </footer-column>
+        <footer-column>
+          <h1 className="column-header email-header">Mailing List</h1>
+          <input className="first-name" placeholder="First Name"></input>
+          <input className="last-name" placeholder="Last Name"></input>
+          <input className="email" placeholder="Email Address"></input>
+        </footer-column>
       </SizeWrapper>
     </div>
   );
