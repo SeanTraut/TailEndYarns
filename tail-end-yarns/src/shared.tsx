@@ -10,7 +10,7 @@ export function MainHeader(props:MainHeaderProps){
       <spacer />
       <ul className="nav-list">
         <li className="nav-li"><a className="nav-text" href="#home">Home</a></li>
-        <li className="nav-li"><a className="nav-text" href="">Shop</a></li>
+        <li className="nav-li"><a className="nav-text" href="#shop">Shop</a></li>
         <li className="nav-li"><a className="nav-text" href="#about">About</a></li>
         <li className="nav-li"><a className="nav-text" href="#contact">Contact Us</a></li>
       </ul>
