@@ -36,6 +36,14 @@ ul.nav-list a.nav-text:hover{
   border-bottom: 1px solid var(--text);
 }
 
+/** Banner **/
+div.Banner{
+  flex: 0 0 100px;
+  background-image: url("https://picsum.photos/1920/100");
+  background-position: center;
+  background-size: contain;
+}
+
 /** Main Footer **/
 div.MainFooter{
   background: lightgrey;

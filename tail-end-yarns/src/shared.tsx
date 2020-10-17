@@ -18,6 +18,13 @@ export function MainHeader(props:MainHeaderProps){
   );
 }
 
+interface BannerProps{}
+export function Banner(props:BannerProps){
+  return(
+    <div className="Banner" />
+  );
+}
+
 interface MainFooterProps{}
 export function MainFooter(props:MainFooterProps){
   return(
@@ -33,8 +40,8 @@ export function MainFooter(props:MainFooterProps){
           </ul>
         </footer-column>
         <footer-column class="misc-column">
-        <h1 className="column-header misc-header">Blurb</h1>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma
+        <h1 className="column-header misc-header">News Blurb</h1>
+          We are always working on inspiration for new colorways and would be excited to hear from you! Please let us know if you have any ideas you would like to turn into a reality.
         </footer-column>
         <footer-column>
           <h1 className="column-header email-header">Mailing List</h1>

@@ -2,6 +2,7 @@ import React from 'react';
 import './App.scss';
 import { Product, Category, db } from './data';
 import { HomePage } from './homepage/homepage';
+import { AboutPage } from './aboutpage/aboutpage';
 
 export let app:App | undefined = undefined;
 
@@ -57,6 +58,8 @@ class App extends React.Component<{}>{
     let content;
     if(this.state.page === "home"){
       content = <HomePage />;
+    }else if(this.state.page === "about"){
+      content = <AboutPage />;
     }else{
       content = <div>404: Page Not Found</div>
     }

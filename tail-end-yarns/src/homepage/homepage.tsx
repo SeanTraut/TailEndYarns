@@ -15,7 +15,7 @@ export function HomePage(props:HomePageProps){
 }
 
 interface MainCTAProps{}
-function MainCTA(props:MainCTAProps){
+export function MainCTA(props:MainCTAProps){
   return(
     <div className="MainCTA">
       <div className = "hero-image">
