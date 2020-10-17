@@ -2,7 +2,9 @@ import React from 'react';
 import './App.scss';
 import { Product, Category, db } from './data';
 import { HomePage } from './homepage/homepage';
+import { ShopPage } from './shoppage/shoppage';
 import { AboutPage } from './aboutpage/aboutpage';
+import { ContactPage } from './contactpage/contactpage';
 
 export let app:App | undefined = undefined;
 
@@ -21,7 +23,7 @@ interface AppState{
 }
 class App extends React.Component<{}>{
   state: AppState = {
-    page: "home",
+    page: "contact",
     product: db.products[0],
     category: db.categories[0]
   };
@@ -60,6 +62,10 @@ class App extends React.Component<{}>{
       content = <HomePage />;
     }else if(this.state.page === "about"){
       content = <AboutPage />;
+    }else if(this.state.page === "shop"){
+      content = <ShopPage />;
+    }else if(this.state.page === "contact"){
+      content = <ContactPage />;
     }else{
       content = <div>404: Page Not Found</div>
     }
