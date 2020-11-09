@@ -100,14 +100,14 @@ export function ShopProduct(props:ShopProductProps){
       <a href = {`#product/${db.products.indexOf(props.product)}`} className = "product">
         <product-image source = {source} style = {{backgroundImage: `url(${source})`}} class = "image product-sort-image"></product-image>
         <h3 className = "shop-product">{props.product.title || "Neon Pink"} | {props.category.title}</h3>
-        <review-stars>
-          <ion-icon name="star" />
-          <ion-icon name="star" />
-          <ion-icon name="star" />
-          <ion-icon name="star" />
-          <ion-icon name="star" />
+        <div className="review">
+          <ion-icon name="star" class="full-star" />
+          <ion-icon name="star" class="full-star" />
+          <ion-icon name="star" class="full-star" />
+          <ion-icon name="star" class="full-star" />
+          <ion-icon name="star" class="full-star" />
           <review-count>{props.product.reviewCount || "100"} reviews</review-count>
-        </review-stars>
+        </div>
         <product-price>{props.product.price || "Sold Out"}</product-price>
       </a>
     </div>

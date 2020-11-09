@@ -13,6 +13,17 @@ div.ShopProduct a{
   text-decoration: none;
 }
 
+div.ShopProduct div.review{
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap;
+}
+
+div.ShopProduct ion-icon.full-star{
+  flex: 1;
+}
+
 div.ShopProduct product-image{
   padding-top: 100%;
   width: 100%;
