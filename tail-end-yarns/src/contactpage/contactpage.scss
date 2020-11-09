@@ -8,3 +8,22 @@ div.ContactPage h1.contact-title{
   font-size: 38px;
   font-family: Roboto, sans-serif;
 }
+
+div.ContactPage img.contact{
+  padding-bottom: 30px;
+}
+
+p.contact-blurb a.contact-details{
+  width: fit-content;
+  text-decoration: none;
+  padding-top: 5px;
+  border-bottom: 1px solid transparent;
+}
+
+p.contact-blurb a.contact-details:hover{
+  border-bottom: 1px solid black;
+}
+
+p.contact-blurb{
+  margin-bottom: 30px;
+}

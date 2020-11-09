@@ -13,10 +13,10 @@ export function ContactPage(props:ContactPageProps){
           <img src="https://picsum.photos/300" alt="" className="contact" />
           <p className="contact-blurb">
             You can reach us via Email, our Etsy store page, or our Instagram!
+            <a href="mailto:tailendyarns@gmail.com" target="_blank" className="contact-details">tailendyarns@gmail.com</a>
+            <a href="https://www.etsy.com/shop/tailendyarns" target="_blank" className="contact-details">Etsy Store</a>
+            <a href="https://www.instagram.com/tailendyarns" target="_blank" className="contact-details">Instagram</a>
           </p>
-          <a href="mailto:tailendyarns@gmail.com" target="_blank" className="contact-details">tailendyarns@gmail.com</a>
-          <a href="https://www.etsy.com/shop/tailendyarns" target="_blank" className="contact-details">Etsy Store Page</a>
-          <a href="https://www.instagram.com/tailendyarns" target="_blank" className="contact-details">Instagram</a>
         </contact>
       </SizeWrapper>
       <MainFooter />

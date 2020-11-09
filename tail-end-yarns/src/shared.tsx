@@ -85,3 +85,68 @@ export function Gallery(props:GalleryProps){
     </div>
   );
 }
+
+export interface OptionProps{
+  value: string;
+  text: string;
+  selected: boolean;
+}
+interface DropdownProps {
+  class: string;
+  children: any[];
+  selected: string;
+  onChanged: (value:string) => any;
+}
+interface DropdownState {
+  open: boolean;
+}
+
+export class Dropdown extends React.Component<DropdownProps> {
+  state: DropdownState = {
+    open: false
+  };
+
+  toggle_options = () => {
+
+    this.setState({
+      open: !this.state.open
+    });
+  };
+
+  select_option = (event: React.MouseEvent<HTMLOptionElement>) => {
+
+    this.setState({
+      open: false
+    });
+
+    this.props.onChanged(event.currentTarget.value);
+
+    event.stopPropagation();
+  };
+
+  render() {
+    let options = [];
+    let style = `${this.props.class} ${this.state.open ? "open" : "closed"}`;
+    let text = this.props.children[0] ? this.props.children[0].text : "EMPTY";
+
+    for (let option of this.props.children) {
+      if (option.value === this.props.selected) {
+        text = option.text;
+      }
+
+      options.push(<option value={option.value} onClick={this.select_option}>{option.text}</option>);
+    }
+
+    return (
+      <dropdown onClick={this.toggle_options} className={style}>
+        <dropdown-nav>
+          <current-value>{text}</current-value>
+          <ion-icon name="chevron-down" />
+        </dropdown-nav>
+        <option-list>
+          {options}
+        </option-list>
+      </dropdown>
+    );
+  }
+}

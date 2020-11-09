@@ -23,7 +23,7 @@ interface AppState{
 }
 class App extends React.Component<{}>{
   state: AppState = {
-    page: "contact",
+    page: "shop",
     product: db.products[0],
     category: db.categories[0]
   };
@@ -63,7 +63,7 @@ class App extends React.Component<{}>{
     }else if(this.state.page === "about"){
       content = <AboutPage />;
     }else if(this.state.page === "shop"){
-      content = <ShopPage />;
+      content = <ShopPage category = {this.state.category} />;
     }else if(this.state.page === "contact"){
       content = <ContactPage />;
     }else{
