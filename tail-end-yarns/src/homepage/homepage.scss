@@ -4,6 +4,7 @@ div.MainCTA div.hero-image{
   justify-content: center;
   align-items: center;
   background-image: url("../../src/assets/unsplash/yarnpile.jpg");
+  opacity: .9;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -12,9 +13,9 @@ div.MainCTA div.hero-image{
 div.MainCTA h1.page-title{
   position: relative;
   z-index: 5; 
-  margin-bottom: 30px;
-  font-size: 100px;
-  font-family: Roboto, sans-serif;
+  margin-bottom: 22px;
+  font-size: 150px;
+  font-family: 'Shadows Into Light', sans-serif;
   color:#fff;
   font-weight: 400;
   text-shadow: #000 0px 0px 5px;
