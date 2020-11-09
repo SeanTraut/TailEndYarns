@@ -1,28 +1,57 @@
 /** Main CTA **/
 div.MainCTA div.hero-image{
-  flex: 0 0 300px;
+  flex: 0 0 500px;
   justify-content: center;
   align-items: center;
-  background-image: url("https://picsum.photos/id/107/1920/600");
+  background-image: url("../../src/assets/unsplash/yarnpile.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 div.MainCTA h1.page-title{
-  font-size: 65px;
+  position: relative;
+  z-index: 5; 
+  margin-bottom: 30px;
+  font-size: 100px;
   font-family: Roboto, sans-serif;
-  color:white;
+  color:#fff;
+  font-weight: 400;
+  text-shadow: #000 0px 0px 5px;
+  -webkit-font-smoothing: antialiased;
+}
+div.MainCTA h1.page-title:before{
+  position: absolute;
+  left: -4px;
+  top: -4px;
+  z-index: -1;
+  color: #a9ffa9;
+  text-shadow: #000 0px 0px 5px;
+  content: "Tail End Yarns";
+}
+div.MainCTA h1.page-title:after{
+  position: absolute;
+  left: -8px;
+  top: -8px;
+  z-index: -2;
+  color: #000;
+  text-shadow: #000 0px 0px 5px;
+  content: "Tail End Yarns";
 }
 
 div.MainCTA button.CTA{
+  padding: 10px 20px;
+  background: #1c571d;
+  color: #fff;
+  font-size: 20px;
+  font-family: Roboto, sans-serif;
+  text-shadow: #000 0px 0px 4px;
   border: none;
   border-radius: 5px;
 }
-
 div.MainCTA button.CTA:hover{
-  color: white;
-  background: black;
+  color: #fff;
+  background: #103010;
 }
 
 /** Home Product **/
