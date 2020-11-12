@@ -1,5 +1,6 @@
+/** Shop Gallery **/
 div.ShopPage div.Gallery{
-  margin-top: 55px;
+  margin: 55px 0px;
 }
 
 /* === Shop Product === */
@@ -16,12 +17,18 @@ div.ShopProduct a{
 div.ShopProduct div.review{
   flex: 1;
   flex-direction: row;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   white-space: nowrap;
 }
 
-div.ShopProduct ion-icon.full-star{
+div.ShopProduct div.stars{
   flex: 1;
+  flex-direction: row;
+}
+
+div.ShopProduct ion-icon.full-star{
+  flex: 0 0 20px;
 }
 
 div.ShopProduct product-image{

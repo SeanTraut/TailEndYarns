@@ -101,11 +101,13 @@ export function ShopProduct(props:ShopProductProps){
         <product-image source = {source} style = {{backgroundImage: `url(${source})`}} class = "image product-sort-image"></product-image>
         <h3 className = "shop-product">{props.product.title || "Neon Pink"} | {props.category.title}</h3>
         <div className="review">
-          <ion-icon name="star" class="full-star" />
-          <ion-icon name="star" class="full-star" />
-          <ion-icon name="star" class="full-star" />
-          <ion-icon name="star" class="full-star" />
-          <ion-icon name="star" class="full-star" />
+          <div className="stars">
+            <ion-icon name="star" class="full-star" />
+            <ion-icon name="star" class="full-star" />
+            <ion-icon name="star" class="full-star" />
+            <ion-icon name="star" class="full-star" />
+            <ion-icon name="star" class="full-star" />
+          </div>
           <review-count>{props.product.reviewCount || "100"} reviews</review-count>
         </div>
         <product-price>{props.product.price || "Sold Out"}</product-price>
