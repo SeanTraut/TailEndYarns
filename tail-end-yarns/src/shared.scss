@@ -12,6 +12,10 @@ div.MainHeader a.logo-link{
   margin-left: 10vw;
 }
 
+div.MainHeader img.logo{
+  opacity: .9;
+}
+
 div.MainHeader ul.nav-list{
   margin-right: 10vw;
   display: flex;
@@ -39,9 +43,11 @@ ul.nav-list a.nav-text:hover{
 /** Banner **/
 div.Banner{
   flex: 0 0 120px;
-  background-image: url("https://picsum.photos/1920/120");
+  background-image: url("../src/assets/unsplash/yarnpile.jpg");
+  opacity: .9;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /** Main Footer **/
@@ -59,11 +65,6 @@ div.MainFooter h1.column-header{
   margin-bottom: 5px;
   font-family: Roboto, sans-serif;
   font-size: 20px;
-}
-
-div.MainFooter ul.footer-links{
- flex: 0;
- align-items: flex-start;
 }
 
 ul.footer-links a{

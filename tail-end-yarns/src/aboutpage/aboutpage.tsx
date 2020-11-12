@@ -1,4 +1,5 @@
 import React from 'react';
+import liv from '../assets/liv.jpg';
 import {MainHeader, Banner, MainFooter, SizeWrapper}  from '../shared';
 
 interface AboutPageProps{}
@@ -10,7 +11,7 @@ export function AboutPage(props:AboutPageProps){
       <SizeWrapper>
         <about>
           <h1 className="about-title">About Us</h1>
-          <img src="https://picsum.photos/500/600" alt="The Author's Portrait" className="about" />
+          <img src={liv} alt="The Author's Portrait" className="about" />
           <p className ="about-blurb">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
             <br/> <br/>

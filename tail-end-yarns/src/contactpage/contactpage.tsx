@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../assets/logo.png';
 import { MainHeader, Banner, MainFooter, SizeWrapper} from '../shared';
 
 interface ContactPageProps{}
@@ -10,7 +11,7 @@ export function ContactPage(props:ContactPageProps){
       <SizeWrapper>
         <contact>
           <h1 className="contact-title">Contact Us</h1>
-          <img src="https://picsum.photos/300" alt="" className="contact" />
+          <img src={logo} alt="" className="contact" />
           <p className="contact-blurb">
             You can reach us via Email, our Etsy store page, or our Instagram!
             <a href="mailto:tailendyarns@gmail.com" target="_blank" className="contact-details">tailendyarns@gmail.com</a>

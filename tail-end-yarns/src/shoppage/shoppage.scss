@@ -3,6 +3,10 @@ div.ShopPage div.Gallery{
   margin: 55px 0px;
 }
 
+div.ShopPage gallery-items{
+  grid-template-columns: repeat(4, 1fr);
+}
+
 /* === Shop Product === */
 div.ShopProduct{
   flex: 0 0 15%;

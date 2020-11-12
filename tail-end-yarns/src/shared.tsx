@@ -6,7 +6,7 @@ export function MainHeader(props:MainHeaderProps){
   return(
     <div className="MainHeader">
       <a className="logo-link" href="#home">
-        <img src={logo} className="logo-img" alt="logo" />
+        <img src={logo} className="logo" alt="logo" />
       </a>
       <spacer />
       <ul className="nav-list">
