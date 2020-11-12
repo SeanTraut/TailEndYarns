@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+/*
+~Colors~
+  Logo - #7ca36c
+
+
+*/
 /** Main CTA **/
 div.MainCTA div.hero-image{
   flex: 0 0 500px;
@@ -15,7 +22,7 @@ div.MainCTA h1.page-title{
   z-index: 5; 
   margin-bottom: 22px;
   font-size: 150px;
-  font-family: 'Shadows Into Light', sans-serif;
+  font-family: 'Dancing Script', sans-serif;
   color:#fff;
   font-weight: 400;
   text-shadow: #000 0px 0px 5px;
@@ -53,6 +60,11 @@ div.MainCTA button.CTA{
 div.MainCTA button.CTA:hover{
   color: #fff;
   background: #103010;
+}
+
+/** Home Gallery **/
+div.HomePage div.Gallery{
+  margin-top: 55px;
 }
 
 /** Home Product **/

@@ -1,11 +1,12 @@
 import React from 'react';
+import logo from './assets/logo.png';
 
 interface MainHeaderProps{}
 export function MainHeader(props:MainHeaderProps){
   return(
     <div className="MainHeader">
       <a className="logo-link" href="#home">
-        <img src="https://picsum.photos/200/100" className="logo-img" alt="logo" />
+        <img src={logo} className="logo-img" alt="logo" />
       </a>
       <spacer />
       <ul className="nav-list">

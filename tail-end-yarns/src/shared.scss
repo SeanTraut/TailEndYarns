@@ -2,7 +2,7 @@
 div.MainHeader{
   flex: 1 1 100px;
   flex-direction: row;
-  padding: 30px;
+  padding: 0px 30px;
   justify-content: stretch;
   align-items: center;
 }
@@ -95,10 +95,6 @@ div.SizeWrapper content-wrapper{
 }
 
 /** Gallery **/
-div.HomePage div.Gallery{
-  margin-top: 55px;
-}
-
 div.Gallery gallery{
   flex: 1;
   align-items: stretch;
@@ -115,11 +111,6 @@ div.Gallery h1.gallery-title{
 }
 
 div.Gallery gallery-items{
-  flex: 1;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-items: center;
-  align-items: stretch;
-  justify-content: stretch;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
